@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import {
   ChevronLeft,
@@ -14,7 +13,6 @@ import {
   Package2,
   PanelLeft,
   Search,
-  Settings,
   ShoppingCart,
   Truck,
   Users2,

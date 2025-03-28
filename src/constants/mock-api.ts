@@ -39,6 +39,8 @@ export const fakeProducts = {
         'Beauty Products'
       ];
 
+      const images = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
       return {
         id,
         name: faker.commerce.productName(),
@@ -47,7 +49,7 @@ export const fakeProducts = {
           .between({ from: '2022-01-01', to: '2023-12-31' })
           .toISOString(),
         price: parseFloat(faker.commerce.price({ min: 5, max: 500, dec: 2 })),
-        photo_url: `https://api.slingacademy.com/public/sample-products/${id}.png`,
+        photo_url: images,
         category: faker.helpers.arrayElement(categories),
         updated_at: faker.date.recent().toISOString()
       };

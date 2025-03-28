@@ -20,10 +20,9 @@ export default async function DashboardLayout({
 }) {
     // Persisting the sidebar state in the cookie.
     const cookieStore = await cookies();
-    const defaultOpen = cookieStore.get('sidebar:state')?.value === 'true';
     return (
         <main>
-            <header className='px-4 py-2'>
+            <header className='px-4 py-2 w-full'>
                 <NavigationMenuMain />
             </header>
             <ModalCartProvider>

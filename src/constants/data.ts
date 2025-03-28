@@ -38,6 +38,14 @@ export const navItems: NavItem[] = [
     items: [] // No child items
   },
   {
+    title: 'Product',
+    url: '/dashboard/product',
+    icon: 'product',
+    shortcut: ['p', 'p'],
+    isActive: false,
+    items: [] // No child items
+  },
+  {
     title: 'Mail',
     url: '/dashboard/mail',
     icon: 'kanban',
@@ -46,9 +54,9 @@ export const navItems: NavItem[] = [
     items: [] // No child items
   },
   {
-    title: 'Product',
-    url: '/dashboard/product',
-    icon: 'product',
+    title: 'Blogs',
+    url: '/dashboard/blog',
+    icon: 'post',
     shortcut: ['p', 'p'],
     isActive: false,
     items: [] // No child items
