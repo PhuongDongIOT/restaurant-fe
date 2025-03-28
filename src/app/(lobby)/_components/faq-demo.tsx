@@ -2,7 +2,7 @@
 
 import FaqPage from '@/features/faq/faq-page';
 
-export default async function FaqDemo() {
+export default function FaqDemo() {
 
     const DEMO_FAQS = [
         {
