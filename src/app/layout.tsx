@@ -39,31 +39,7 @@ export default async function RootLayout({
 
   return (
     <html lang='en' suppressHydrationWarning>
-<<<<<<< HEAD
       <body>
-=======
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
-                }
-              } catch (_) {}
-            `
-          }}
-        />
-      </head>
-      <body
-        className={cn(
-          'bg-background overflow-hidden overscroll-none font-sans antialiased',
-          activeThemeValue ? `theme-${activeThemeValue}` : '',
-          isScaled ? 'theme-scaled' : '',
-          fontVariables
-        )}
-      >
->>>>>>> 71f2cb44fa51079aec5ab3b6fc77238987f3bdea
         <NextTopLoader showSpinner={false} />
         <NuqsAdapter>
           <Providers

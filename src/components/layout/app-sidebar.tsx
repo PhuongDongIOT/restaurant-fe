@@ -63,8 +63,6 @@ const tenants = [
 export default function AppSidebar() {
   const { data: session } = useSession();
   const pathname = usePathname();
-<<<<<<< HEAD
-=======
   const { state, isMobile } = useSidebar();
   const { isOpen } = useMediaQuery();
 
@@ -77,7 +75,6 @@ export default function AppSidebar() {
   React.useEffect(() => {
     // Remove console.log
   }, [isOpen]);
->>>>>>> 71f2cb44fa51079aec5ab3b6fc77238987f3bdea
 
   return (
     <Sidebar collapsible='icon'>
